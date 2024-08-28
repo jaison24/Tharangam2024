@@ -3,18 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PDF Access</title>
+    <title>Tharangam 2024</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-    <h1>THARANGAM 2024</h1>
-    <img src="{{ url_for('static', filename='Onam_bg.jpeg') }}" alt="Onam Background" class="background-image">
+    <header>
+        <h1 class="title">Tharangam 2024</h1>
+    </header>
+
+    <!-- Password access form -->
     <div class="container">
         <form action="/access" method="post">
             <label for="password">Please enter your transaction ID to get your Onasadhya Coupon:</label>
             <input type="text" id="password" name="password" required>
             <button type="submit">Submit</button>
         </form>
+    </div>
+
+    <!-- First two images -->
+    <div class="image-container">
+        <img src="{{ url_for('static', filename='2.png') }}" alt="Onam Background" class="content-image">
+        <img src="{{ url_for('static', filename='1.png') }}" alt="First Image" class="content-image">
     </div>
 </body>
 </html>
