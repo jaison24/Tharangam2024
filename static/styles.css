@@ -1,42 +1,50 @@
+/* General Reset and Styling */
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #000;  /* Set a background color if the image doesn't cover it */
+    background-color: #000;
 }
 
-h1 {
+/* Header Styling */
+header {
+    background-color: #282c34;
+    padding: 20px 0;
     text-align: center;
-    font-size: 2.5em;
-    font-weight: bold; /* Make title bold */
-    margin: 20px 0; /* Margin for spacing */
-    color: #fff; /* Set text color to white */
 }
 
-.background-image {
-    width: 100%; /* Make the image fit the width of the screen */
-    height: auto; /* Maintain aspect ratio */
+.title {
+    font-size: 3em;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 3px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+    margin: 0;
+    text-transform: uppercase;
 }
 
+/* Container for the Form */
 .container {
     text-align: center;
-    margin-top: 20px; /* Space below the image */
-    color: #fff; /* Text color for the input area */
+    margin: 40px 0;
+    color: #fff;
+    padding: 0 20px; /* Padding to ensure it looks good on smaller screens */
 }
 
 label {
     font-size: 1.2em;
+    display: block;
+    margin-bottom: 10px;
 }
 
 input[type="text"] {
     padding: 10px;
     font-size: 1em;
-    margin-top: 10px;
-    margin-bottom: 20px;
     border-radius: 5px;
     border: 1px solid #ccc;
-    width: 80%; /* Width of the input box */
-    max-width: 300px; /* Maximum width */
+    width: 80%;
+    max-width: 300px;
+    margin-bottom: 20px;
 }
 
 button {
@@ -51,4 +59,34 @@ button {
 
 button:hover {
     background-color: #f57c00;
+}
+
+/* Image Container */
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+/* Responsive Image Styling */
+.content-image {
+    width: 100%; /* Make image responsive */
+    max-width: 210mm; /* A4 width */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px 0; /* Space between images */
+}
+
+/* Responsive Title */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2.5em; /* Adjust title size for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 2em; /* Adjust title size for mobile devices */
+        letter-spacing: 2px; /* Reduce spacing for smaller screens */
+    }
 }
