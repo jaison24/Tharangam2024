@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;  /* Set a background color if the image doesn't cover it */
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold; /* Make title bold */
+    margin: 20px 0; /* Margin for spacing */
+    color: #fff; /* Set text color to white */
+}
+
+.background-image {
+    width: 100%; /* Make the image fit the width of the screen */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.container {
+    text-align: center;
+    margin-top: 20px; /* Space below the image */
+    color: #fff; /* Text color for the input area */
+}
+
+label {
+    font-size: 1.2em;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 1em;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 80%; /* Width of the input box */
+    max-width: 300px; /* Maximum width */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: white;
+    background-color: #ff9800;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f57c00;
+}
